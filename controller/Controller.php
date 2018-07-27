@@ -181,10 +181,23 @@ class Controller{
             include 'content.php';
         }
         
+        
+       
        
     }
     
         
+    public function logout(){
+        
+        if(!isset($_SESSION)){
+            session_start();
+        }
+        if(isset($_SESSION['loggedin'])){
+            $msg="successful logged out user".$_SESSION['loggedin'];
+            session_destroy();
+            header("Location:../index.php");
+        }
+    }
     
     
     

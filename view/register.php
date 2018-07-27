@@ -19,7 +19,7 @@ if(isset($errors['userName'])){
     echo "<span class='btn btn-danger move'>". $errors['userName']."</span>";
 }?><br><br>
 
-<input class=" btn color movee" type='text' name='password' placeholder = 'Password'value="<?php echo $password;?>">
+<input class=" btn color movee" type='password' name='password' placeholder = 'Password'value="<?php echo $password;?>">
 <?php echo "<span style='color:red'>*</span>"; if(isset($errors['password'])){
     echo "<span class='btn btn-danger move'>". $errors['password']."</span>";
 }?><br><br>
@@ -30,7 +30,7 @@ if(isset($errors['userName'])){
 }?><br><br>
 
 <input class="btn color movee" type='text' name='user_lastname' placeholder='Last Name' value="<?php echo $user_lastname;?>">
-<?php echo " * "; if (isset($errors['user_lastname'])){
+<?php echo "<span style='color:red'> *</span> "; if (isset($errors['user_lastname'])){
     echo  "<span class='btn btn-danger move'>". $errors['user_lastname']."</span>";
                         
 }?><br><br>
@@ -47,5 +47,5 @@ if(isset($errors['userName'])){
 </div>
 
 
-<?php if(isset($msg)){echo $msg;}?>
+<?php if(isset($msg)){echo "<span class='btn btn-danger move'style='margin-left:auto;margin-right:auto;'>". $msg."</span>";}?>
 <?php include 'footer.php';?>

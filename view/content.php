@@ -9,7 +9,7 @@ $imges=isset($imges)?$imges:array();
 include 'header.php';
 ?>
 
-
+<a class="btn color movee" href="routes.php?page=logout">Log out</a>
 <div class="container">
 <div class="row">
 <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 move">
