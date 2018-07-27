@@ -1,2 +1,3 @@
-
+# SIMPLE PRACTICE WebSite
+Created for purpose of practice, simple website with login,register and logout button, and like logged in profile there is option that photo can be added... 
 
